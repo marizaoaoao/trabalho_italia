@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #499e55;   
+}
+
+.bookmark {
+    position: fixed;
+    top: 0;
+    left: 40%;
+    transform: translateX(-50%);
+    width: 10vh;
+    height: 40vh;
+    background-color: #e41616;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #fffbf2 #fffbf2;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #fffbf2;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #fffbf2;
+    border-radius: 20px;
+    border: 3px solid #fffbf2;
+  }
+
+h1 {
+    margin-left: 25px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #e41616;
+    font-size: 60pt;
+}
+
+p {
+    margin-left: 25px;
+    margin-right: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #236c37;
+    font-size: 18pt;
+    text-align: justify;
+}
+
+path {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#info {
+    width: 40%;
+    height: 100%;
+    padding: 20px;
+    background-color: #fffbf2;
+    overflow-y: auto;
+}
+
+.scroll-message {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #888; /* Cor cinza para diferenciar */
+    text-align: center; /* Centraliza a mensagem */
+}
+
+.montserrat-info {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #236c37;
+    font-size: 18pt;
+}
+
+#map {
+    width: 60%;
+    height: 100vh;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: flex;
+}
+
+svg path {
+    fill: #fffbf2;
+    stroke: #236c37;
+    stroke-width: 0.25;
+}
+
+svg path:hover {
+    fill: #236c37;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    pointer-events: none;
+    transition: opacity 0.2s;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+svg path.selected {
+    fill: #236c37;
+}
