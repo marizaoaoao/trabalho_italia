@@ -1,17 +1,7 @@
 * {
     box-sizing: border-box;
-}
-
-* {
     margin: 0;
     padding: 0;
-}
-
-body {
-    margin: 0;
-    display: flex;
-    height: 100vh;
-    background-color: #499e55;   
 }
 
 .bookmark {
@@ -24,24 +14,23 @@ body {
     background-color: #e41616;
 }
 
-* {
-    scrollbar-width: thin;
-    scrollbar-color: #fffbf2 #fffbf2;
-  }
-  
-  *::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  *::-webkit-scrollbar-track {
-    background: #fffbf2;
-  }
-  
-  *::-webkit-scrollbar-thumb {
-    background-color: #fffbf2;
-    border-radius: 20px;
-    border: 3px solid #fffbf2;
-  }
+body {
+	  direction: ltr;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #499e55;
+}
+
+.bookmark {
+    position: fixed;
+    top: 0;
+    left: 40%;
+    transform: translateX(-50%);
+    width: 10vh;
+    height: 40vh;
+    background-color: #e41616;
+}
 
 h1 {
     margin-left: 25px;
@@ -57,7 +46,6 @@ p {
     font-weight: 500;
     color: #236c37;
     font-size: 18pt;
-    text-align: justify;
 }
 
 path {
@@ -65,11 +53,14 @@ path {
 }
 
 #info {
+	direction: rtl;
+	scrollbar-color: #246B38 #FFFBF2;
     width: 40%;
     height: 100%;
     padding: 20px;
     background-color: #fffbf2;
     overflow-y: auto;
+	text-align: left;
 }
 
 .scroll-message {
