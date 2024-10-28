@@ -1,28 +1,20 @@
 * {
     box-sizing: border-box;
+}
+
+* {
     margin: 0;
     padding: 0;
 }
 
-.bookmark {
-    position: fixed;
-    top: 0;
-    left: 40%;
-    transform: translateX(-50%);
-    width: 10vh;
-    height: 40vh;
-    background-color: #e41616;
-}
-
 body {
-	  direction: ltr;
     margin: 0;
     display: flex;
     height: 100vh;
-    background-color: #499e55;
+    background-color: #499e55;   
 }
 
-.bookmark {
+#bookmark {
     position: fixed;
     top: 0;
     left: 40%;
@@ -31,6 +23,20 @@ body {
     height: 40vh;
     background-color: #e41616;
 }
+  
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #fffbf2;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #fffbf2;
+    border-radius: 20px;
+    border: 3px solid #fffbf2;
+  }
 
 h1 {
     margin-left: 25px;
@@ -46,6 +52,7 @@ p {
     font-weight: 500;
     color: #236c37;
     font-size: 18pt;
+    text-align: justify;
 }
 
 path {
@@ -53,14 +60,11 @@ path {
 }
 
 #info {
-	direction: rtl;
-	scrollbar-color: #246B38 #FFFBF2;
     width: 40%;
     height: 100%;
     padding: 20px;
     background-color: #fffbf2;
     overflow-y: auto;
-	text-align: left;
 }
 
 .scroll-message {
@@ -75,6 +79,17 @@ path {
     font-weight: 500;
     color: #236c37;
     font-size: 18pt;
+}
+
+.menu {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    color: #fffbf2;
+    font-size: 12pt;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-start;
+    padding-top: 5vh;
 }
 
 #map {
